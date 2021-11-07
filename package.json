@@ -1,0 +1,25 @@
+{
+  "name": "algorithms-basic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Laishuxin/algorithms-basic.git",
+  "author": "Laishuxin <56504759+Laishuxin@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "prettier": "^2.3.2",
+    "lint-staged": ">=10",
+    "husky": ">=6"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "format": "prettier --write ."
+  },
+  "lint-staged": {
+    "*.{md}": "yarn format"
+  },
+  "husky": {
+    "hooks": {}
+  }
+}
